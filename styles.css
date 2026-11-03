@@ -1,1 +1,45 @@
 /*  your css code here. If applicable */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#playerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#playerForm input,
+#playerForm button {
+    width: 200px;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
